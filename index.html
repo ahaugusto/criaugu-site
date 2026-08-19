@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CriAugu — Tecnologia &amp; Design</title>
-<meta name="description" content="CriAugu é um estúdio de tecnologia e design que conecta estratégia de produto, UX engineering e desenvolvimento para transformar ideias complexas em sistemas que funcionam de verdade.">
+<meta name="description" content="CriAugu é um estúdio de tecnologia e design que conecta estratégia de produto, UX engineering e desenvolvimento para transformar ideias complexas em sistemas que funcionam de verdade." id="meta-description">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -247,17 +247,20 @@
       <img id="logo-nav" src="logo-wordmark.png" alt="CriAugu" style="height: 40px; width: auto; display:block;">
     </div>
     <nav class="nav-links">
-      <a href="#produtos" style="font-size:14px; color:var(--ink-dim);">Produtos</a>
-      <a href="#servicos" style="font-size:14px; color:var(--ink-dim);">Serviços</a>
-      <a href="#sobre" style="font-size:14px; color:var(--ink-dim);">Sobre</a>
-      <a href="https://augustobrasil.com" style="font-size:14px; color:var(--ink-dim);">Portfólio pessoal ↗</a>
+      <a href="#produtos" style="font-size:14px; color:var(--ink-dim);" data-pt="Produtos" data-en="Products">Produtos</a>
+      <a href="#servicos" style="font-size:14px; color:var(--ink-dim);" data-pt="Serviços" data-en="Services">Serviços</a>
+      <a href="#sobre" style="font-size:14px; color:var(--ink-dim);" data-pt="Sobre" data-en="About">Sobre</a>
+      <a href="https://augustobrasil.com" style="font-size:14px; color:var(--ink-dim);" data-pt="Portfólio pessoal ↗" data-en="Personal portfolio ↗">Portfólio pessoal ↗</a>
     </nav>
     <div style="display:flex; align-items:center; gap:16px;">
+      <button class="theme-toggle lang-btn" id="lang-toggle" aria-label="Switch language / Trocar idioma">
+        <span id="lang-label" class="mono" style="font-size:13px; font-weight:600;">EN</span>
+      </button>
       <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema claro/escuro">
         <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
         <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
-      <a href="#contato-criaugu" class="btn btn-primary" style="padding:11px 20px; font-size:14px;">Fale com a gente</a>
+      <a href="#contato-criaugu" class="btn btn-primary" style="padding:11px 20px; font-size:14px;" data-pt="Fale com a gente" data-en="Get in touch">Fale com a gente</a>
     </div>
   </div>
 
@@ -267,16 +270,20 @@
     <div class="hero-seq wrap" style="padding-top: 120px; padding-bottom: 100px; position: relative;">
       <div class="hero-scrim"></div>
       <div style="position:relative; z-index:1; max-width:980px; display:flex; flex-direction:column; gap:28px;">
-        <div class="eyebrow">Tecnologia &amp; Design</div>
-        <h1 class="hero-title" style="max-width:820px;">
+        <div class="eyebrow" data-pt="Tecnologia &amp; Design" data-en="Technology &amp; Design">Tecnologia &amp; Design</div>
+        <h1 class="hero-title" style="max-width:820px;"
+          data-pt="Construímos produtos digitais&nbsp;— e a estratégia por trás deles."
+          data-en="We build digital products&nbsp;— and the strategy behind them.">
           Construímos produtos digitais&nbsp;— e a estratégia por trás deles.
         </h1>
-        <p style="font-size:19px; max-width:640px; color:var(--ink-dim);">
+        <p style="font-size:19px; max-width:640px; color:var(--ink-dim);"
+          data-pt="CriAugu é um estúdio de tecnologia e design que conecta estratégia de produto, UX engineering e desenvolvimento para transformar ideias complexas em sistemas que funcionam de verdade."
+          data-en="CriAugu is a technology and design studio connecting product strategy, UX engineering and development to turn complex ideas into systems that actually work.">
           CriAugu é um estúdio de tecnologia e design que conecta estratégia de produto, UX engineering e desenvolvimento para transformar ideias complexas em sistemas que funcionam de verdade.
         </p>
         <div style="display:flex; gap:16px; margin-top:8px; flex-wrap:wrap;">
-          <a href="#contato-criaugu" class="btn btn-primary">Iniciar um projeto</a>
-          <a href="#produtos" class="btn btn-ghost">Ver produtos</a>
+          <a href="#contato-criaugu" class="btn btn-primary" data-pt="Iniciar um projeto" data-en="Start a project">Iniciar um projeto</a>
+          <a href="#produtos" class="btn btn-ghost" data-pt="Ver produtos" data-en="See products">Ver produtos</a>
         </div>
       </div>
       <img id="hero-symbol" class="hero-symbol" src="logo-symbol-dark.png" alt="" aria-hidden="true" width="760" height="562">
@@ -286,27 +293,33 @@
   <!-- O QUE FAZEMOS -->
   <div id="servicos" class="wrap" style="padding-top: 40px; padding-bottom: 120px; border-top: 1px solid var(--line);">
     <div class="reveal" data-reveal style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:56px; flex-wrap:wrap; gap:12px;">
-      <h2 style="font-size:32px;">O que fazemos</h2>
-      <span class="mono" style="font-size:13px; color:var(--ink-dim);">01 — Serviços</span>
+      <h2 style="font-size:32px;" data-pt="O que fazemos" data-en="What we do">O que fazemos</h2>
+      <span class="mono" style="font-size:13px; color:var(--ink-dim);" data-pt="01 — Serviços" data-en="01 — Services">01 — Serviços</span>
     </div>
     <div class="reveal-stagger services-grid" data-reveal>
 
       <div class="card-hover" style="background:var(--bg-raised); padding:36px; display:flex; flex-direction:column; gap:16px;">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
-        <h3 style="font-size:19px;">Estratégia de produto</h3>
-        <p style="font-size:14.5px;">Discovery, arquitetura de produto e modelagem de negócio para ecossistemas digitais — da hipótese ao roadmap validado.</p>
+        <h3 style="font-size:19px;" data-pt="Estratégia de produto" data-en="Product strategy">Estratégia de produto</h3>
+        <p style="font-size:14.5px;"
+          data-pt="Discovery, arquitetura de produto e modelagem de negócio para ecossistemas digitais — da hipótese ao roadmap validado."
+          data-en="Discovery, product architecture and business modeling for digital ecosystems — from hypothesis to a validated roadmap.">Discovery, arquitetura de produto e modelagem de negócio para ecossistemas digitais — da hipótese ao roadmap validado.</p>
       </div>
 
       <div class="card-hover" style="background:var(--bg-raised); padding:36px; display:flex; flex-direction:column; gap:16px;">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M3 9h18M8 4v14"/></svg>
         <h3 style="font-size:19px;">Product design &amp; UX</h3>
-        <p style="font-size:14.5px;">Pesquisa, arquitetura de informação, prototipação e design systems — com rigor de usabilidade e acessibilidade.</p>
+        <p style="font-size:14.5px;"
+          data-pt="Pesquisa, arquitetura de informação, prototipação e design systems — com rigor de usabilidade e acessibilidade."
+          data-en="Research, information architecture, prototyping and design systems — with real rigor on usability and accessibility.">Pesquisa, arquitetura de informação, prototipação e design systems — com rigor de usabilidade e acessibilidade.</p>
       </div>
 
       <div class="card-hover" style="background:var(--bg-raised); padding:36px; display:flex; flex-direction:column; gap:16px;">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><path d="M8 9l-5 3 5 3M16 9l5 3-5 3M13 5l-2 14"/></svg>
-        <h3 style="font-size:19px;">Tecnologia &amp; dados</h3>
-        <p style="font-size:14.5px;">Arquitetura de software, ferramentas internas, automação e dashboards que conectam produto a decisão de negócio.</p>
+        <h3 style="font-size:19px;" data-pt="Tecnologia &amp; dados" data-en="Technology &amp; data">Tecnologia &amp; dados</h3>
+        <p style="font-size:14.5px;"
+          data-pt="Arquitetura de software, ferramentas internas, automação e dashboards que conectam produto a decisão de negócio."
+          data-en="Software architecture, internal tooling, automation and dashboards connecting product to business decisions.">Arquitetura de software, ferramentas internas, automação e dashboards que conectam produto a decisão de negócio.</p>
       </div>
 
     </div>
@@ -315,22 +328,26 @@
   <!-- PRODUTOS -->
   <div id="produtos" class="wrap" style="padding-bottom: 120px;">
     <div class="reveal" data-reveal style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px; flex-wrap:wrap; gap:12px;">
-      <h2 style="font-size:32px;">Produtos &amp; iniciativas</h2>
-      <span class="mono" style="font-size:13px; color:var(--ink-dim);">02 — Portfólio</span>
+      <h2 style="font-size:32px;" data-pt="Produtos &amp; iniciativas" data-en="Products &amp; initiatives">Produtos &amp; iniciativas</h2>
+      <span class="mono" style="font-size:13px; color:var(--ink-dim);" data-pt="02 — Portfólio" data-en="02 — Portfolio">02 — Portfólio</span>
     </div>
-    <p class="reveal" data-reveal style="font-size:15px; margin-bottom:48px; max-width:620px;">Frentes próprias em diferentes estágios — de exploração conceitual a ferramentas em uso ativo.</p>
+    <p class="reveal" data-reveal style="font-size:15px; margin-bottom:48px; max-width:620px;"
+      data-pt="Frentes próprias em diferentes estágios — de exploração conceitual a ferramentas em uso ativo."
+      data-en="Our own initiatives at different stages — from conceptual exploration to tools in active use.">Frentes próprias em diferentes estágios — de exploração conceitual a ferramentas em uso ativo.</p>
 
     <div class="reveal-stagger products-grid" data-reveal>
 
       <a href="https://tusab.solutions" target="_blank" rel="noopener" class="card card-hover" style="padding:32px; display:flex; flex-direction:column; gap:18px; grid-column: 1 / -1; border-color: var(--accent);">
         <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
           <h3 style="font-size:22px; color:var(--ink);">Tusab</h3>
-          <span class="tag" style="border-color:var(--accent); color:var(--accent);">Ativo · v1.0.53</span>
+          <span class="tag" style="border-color:var(--accent); color:var(--accent);" data-pt="Ativo · v1.0.53" data-en="Active · v1.0.53">Ativo · v1.0.53</span>
         </div>
-        <p style="font-size:14.5px;">Seu especialista pessoal — PKM (gestão de conhecimento pessoal) com IA local. Aponte para o que você quer aprender — canal do YouTube, PDF, documento — e o Tusab absorve tudo e responde suas perguntas citando a fonte exata. Roda no seu computador, funciona offline, custo zero com Ollama.</p>
+        <p style="font-size:14.5px;"
+          data-pt="Seu especialista pessoal — PKM (gestão de conhecimento pessoal) com IA local. Aponte para o que você quer aprender — canal do YouTube, PDF, documento — e o Tusab absorve tudo e responde suas perguntas citando a fonte exata. Roda no seu computador, funciona offline, custo zero com Ollama."
+          data-en="Your personal specialist — PKM (personal knowledge management) with local AI. Point it at what you want to learn — a YouTube channel, a PDF, a document — and Tusab absorbs it all and answers your questions citing the exact source. Runs on your machine, works offline, zero cost with Ollama.">Seu especialista pessoal — PKM (gestão de conhecimento pessoal) com IA local. Aponte para o que você quer aprender — canal do YouTube, PDF, documento — e o Tusab absorve tudo e responde suas perguntas citando a fonte exata. Roda no seu computador, funciona offline, custo zero com Ollama.</p>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
           <span class="tag">PKM</span>
-          <span class="tag">IA local</span>
+          <span class="tag" data-pt="IA local" data-en="Local AI">IA local</span>
           <span class="tag">RAG</span>
           <span class="tag">Windows &amp; macOS</span>
         </div>
@@ -339,9 +356,11 @@
       <a href="https://www.figma.com/community/plugin/1607744231649281413/bi-bridge-design-to-data" target="_blank" rel="noopener" class="card card-hover" style="padding:32px; display:flex; flex-direction:column; gap:18px;">
         <div style="display:flex; align-items:center; justify-content:space-between;">
           <h3 style="font-size:20px; color:var(--ink);">BI Bridge</h3>
-          <span class="tag">Ativo · v2.2</span>
+          <span class="tag" data-pt="Ativo · v2.2" data-en="Active · v2.2">Ativo · v2.2</span>
         </div>
-        <p style="font-size:14.5px;">Plugin Figma que automatiza o handoff entre design de interface e engenharia de dados — Power BI, Tableau, Looker — extraindo tokens visuais e especificações técnicas prontas para uso.</p>
+        <p style="font-size:14.5px;"
+          data-pt="Plugin Figma que automatiza o handoff entre design de interface e engenharia de dados — Power BI, Tableau, Looker — extraindo tokens visuais e especificações técnicas prontas para uso."
+          data-en="Figma plugin that automates the handoff between interface design and data engineering — Power BI, Tableau, Looker — extracting visual tokens and technical specs ready to use.">Plugin Figma que automatiza o handoff entre design de interface e engenharia de dados — Power BI, Tableau, Looker — extraindo tokens visuais e especificações técnicas prontas para uso.</p>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
           <span class="tag">Figma Plugin</span>
           <span class="tag">Design-to-Data</span>
@@ -351,11 +370,13 @@
       <div class="card card-hover" style="padding:32px; display:flex; flex-direction:column; gap:18px;">
         <div style="display:flex; align-items:center; justify-content:space-between;">
           <h3 style="font-size:20px;">SardinhIA</h3>
-          <span class="tag">Ativo</span>
+          <span class="tag" data-pt="Ativo" data-en="Active">Ativo</span>
         </div>
-        <p style="font-size:14.5px;">Motor de extração e estruturação de conhecimento que transforma um grande acervo de conteúdo em uma base consultável por agentes de IA, replicando tom de voz e contexto do criador original.</p>
+        <p style="font-size:14.5px;"
+          data-pt="Motor de extração e estruturação de conhecimento que transforma um grande acervo de conteúdo em uma base consultável por agentes de IA, replicando tom de voz e contexto do criador original."
+          data-en="A knowledge extraction and structuring engine that turns a large content archive into a knowledge base AI agents can query, replicating the original creator's tone and context.">Motor de extração e estruturação de conhecimento que transforma um grande acervo de conteúdo em uma base consultável por agentes de IA, replicando tom de voz e contexto do criador original.</p>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <span class="tag">IA aplicada</span>
+          <span class="tag" data-pt="IA aplicada" data-en="Applied AI">IA aplicada</span>
           <span class="tag">RAG</span>
         </div>
       </div>
@@ -363,24 +384,28 @@
       <a href="https://mercadomutuo.com.br/" target="_blank" rel="noopener" class="card card-hover" style="padding:32px; display:flex; flex-direction:column; gap:18px;">
         <div style="display:flex; align-items:center; justify-content:space-between;">
           <h3 style="font-size:20px; color:var(--ink);">Mercado Mútuo</h3>
-          <span class="tag">Conceitual</span>
+          <span class="tag" data-pt="Conceitual" data-en="Conceptual">Conceitual</span>
         </div>
-        <p style="font-size:14.5px;">Estudo de design especulativo e estratégia de ecossistema: uma proposta de vertical C2C de aluguel de itens para um grande marketplace brasileiro. Projeto conceitual de portfólio, sem vínculo comercial com terceiros.</p>
+        <p style="font-size:14.5px;"
+          data-pt="Estudo de design especulativo e estratégia de ecossistema: uma proposta de vertical C2C de aluguel de itens para um grande marketplace brasileiro. Projeto conceitual de portfólio, sem vínculo comercial com terceiros."
+          data-en="A speculative design and ecosystem strategy study: a proposed C2C item-rental vertical for a major Brazilian marketplace. A conceptual portfolio project, with no commercial ties to any third party.">Estudo de design especulativo e estratégia de ecossistema: uma proposta de vertical C2C de aluguel de itens para um grande marketplace brasileiro. Projeto conceitual de portfólio, sem vínculo comercial com terceiros.</p>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <span class="tag">Design Especulativo</span>
-          <span class="tag">Estratégia</span>
+          <span class="tag" data-pt="Design Especulativo" data-en="Speculative Design">Design Especulativo</span>
+          <span class="tag" data-pt="Estratégia" data-en="Strategy">Estratégia</span>
         </div>
       </a>
 
       <div class="card card-hover" style="padding:32px; display:flex; flex-direction:column; gap:18px;">
         <div style="display:flex; align-items:center; justify-content:space-between;">
           <h3 style="font-size:20px;">Memento Mori</h3>
-          <span class="tag">Conceito</span>
+          <span class="tag" data-pt="Conceito" data-en="Concept">Conceito</span>
         </div>
-        <p style="font-size:14.5px;">Conceito de aplicativo de gestão de tempo e foco com base em saúde mental — prioriza reduzir ansiedade em vez de gamificar produtividade, com feedback empático e ritual de fechamento diário.</p>
+        <p style="font-size:14.5px;"
+          data-pt="Conceito de aplicativo de gestão de tempo e foco com base em saúde mental — prioriza reduzir ansiedade em vez de gamificar produtividade, com feedback empático e ritual de fechamento diário."
+          data-en="A time and focus management app concept grounded in mental health — prioritizes reducing anxiety over gamifying productivity, with empathetic feedback and a daily closing ritual.">Conceito de aplicativo de gestão de tempo e foco com base em saúde mental — prioriza reduzir ansiedade em vez de gamificar produtividade, com feedback empático e ritual de fechamento diário.</p>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
           <span class="tag">Product Concept</span>
-          <span class="tag">Bem-estar</span>
+          <span class="tag" data-pt="Bem-estar" data-en="Wellbeing">Bem-estar</span>
         </div>
       </div>
 
@@ -391,19 +416,27 @@
   <div id="sobre" class="wrap" style="padding-bottom: 120px;">
     <div class="card reveal about-row" data-reveal style="padding: 56px;">
       <div style="flex:1; display:flex; flex-direction:column; gap:18px;">
-        <div class="eyebrow">Sobre a CriAugu</div>
-        <h2 style="font-size:28px; line-height:1.3;">Um estúdio pessoal, operado com metodologia de produto real.</h2>
-        <p style="font-size:15px;">A CriAugu nasceu para dar estrutura a um jeito de trabalhar que já existia: construir produtos digitais de ponta a ponta, unindo estratégia, design e tecnologia sob um mesmo padrão de qualidade — seja em iniciativas próprias, seja a serviço de outras empresas.</p>
+        <div class="eyebrow" data-pt="Sobre a CriAugu" data-en="About CriAugu">Sobre a CriAugu</div>
+        <h2 style="font-size:28px; line-height:1.3;" data-pt="Um estúdio pessoal, operado com metodologia de produto real." data-en="A one-person studio, run with real product methodology.">Um estúdio pessoal, operado com metodologia de produto real.</h2>
+        <p style="font-size:15px;"
+          data-pt="A CriAugu nasceu para dar estrutura a um jeito de trabalhar que já existia: construir produtos digitais de ponta a ponta, unindo estratégia, design e tecnologia sob um mesmo padrão de qualidade — seja em iniciativas próprias, seja a serviço de outras empresas."
+          data-en="CriAugu was created to give structure to a way of working that already existed: building digital products end to end, uniting strategy, design and technology under the same quality standard — whether for our own initiatives or in service of other companies.">A CriAugu nasceu para dar estrutura a um jeito de trabalhar que já existia: construir produtos digitais de ponta a ponta, unindo estratégia, design e tecnologia sob um mesmo padrão de qualidade — seja em iniciativas próprias, seja a serviço de outras empresas.</p>
         <a href="https://augustobrasil.com" style="font-size:14.5px; font-weight:500; display:inline-flex; align-items:center; gap:6px;">
-          Conheça o trabalho de Augusto Alves Brasil
+          <span data-pt="Conheça o trabalho de Augusto Alves Brasil" data-en="See Augusto Alves Brasil's work">Conheça o trabalho de Augusto Alves Brasil</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
       <div class="about-divider" style="width:1px; align-self:stretch; background:var(--line);"></div>
       <div style="flex:1; display:flex; flex-direction:column; gap:18px;">
-        <div class="eyebrow">Canal</div>
-        <h3 style="font-size:20px; line-height:1.4;">Construção de produto com IA, em público</h3>
-        <p style="font-size:14.5px;">No canal da CriAugu, compartilhamos o processo real de construir produtos ponta a ponta usando IA — AI Building e Vibe Coding aplicados ao desenvolvimento de produto, sem promessa de curso ou fórmula pronta.</p>
+        <div class="eyebrow" data-pt="Canal" data-en="Channel">Canal</div>
+        <h3 style="font-size:20px; line-height:1.4;" data-pt="Construção de produto com IA, em público" data-en="Building product with AI, in public">Construção de produto com IA, em público</h3>
+        <p style="font-size:14.5px;"
+          data-pt="No canal da CriAugu, compartilhamos o processo real de construir produtos ponta a ponta usando IA — AI Building e Vibe Coding aplicados ao desenvolvimento de produto, sem promessa de curso ou fórmula pronta."
+          data-en="On the CriAugu channel, we share the real process of building products end to end with AI — AI Building and Vibe Coding applied to product development, with no course pitch or ready-made formula.">No canal da CriAugu, compartilhamos o processo real de construir produtos ponta a ponta usando IA — AI Building e Vibe Coding aplicados ao desenvolvimento de produto, sem promessa de curso ou fórmula pronta.</p>
+        <a href="https://www.youtube.com/@CriAugu" target="_blank" rel="noopener" style="font-size:14.5px; font-weight:500; display:inline-flex; align-items:center; gap:6px;">
+          <span data-pt="Assistir no YouTube" data-en="Watch on YouTube">Assistir no YouTube</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
     </div>
   </div>
@@ -412,8 +445,8 @@
   <div id="contato-criaugu" class="wrap" style="padding-bottom: 100px;">
     <div class="reveal contact-row" data-reveal style="border-radius:10px; padding:64px; background: linear-gradient(135deg, var(--accent-dim), var(--bg-raised)); border:1px solid var(--line);">
       <div style="display:flex; flex-direction:column; gap:12px; max-width:560px;">
-        <h2 style="font-size:30px;">Tem um produto para construir ou uma operação para organizar?</h2>
-        <p style="font-size:15px;">Vamos conversar sobre estratégia, design ou tecnologia — sem compromisso.</p>
+        <h2 style="font-size:30px;" data-pt="Tem um produto para construir ou uma operação para organizar?" data-en="Have a product to build or an operation to organize?">Tem um produto para construir ou uma operação para organizar?</h2>
+        <p style="font-size:15px;" data-pt="Vamos conversar sobre estratégia, design ou tecnologia — sem compromisso." data-en="Let's talk about strategy, design or technology — no strings attached.">Vamos conversar sobre estratégia, design ou tecnologia — sem compromisso.</p>
       </div>
       <a href="mailto:criaugu@criaugu.com" class="btn btn-primary" style="font-size:16px; padding:16px 28px;">criaugu@criaugu.com</a>
     </div>
@@ -424,7 +457,7 @@
     <div style="display:flex; align-items:center;">
       <img id="logo-footer" src="logo-tagline.png" alt="CriAugu — Tecnologia &amp; Design" style="height:32px; width:auto;">
     </div>
-    <span class="mono" style="font-size:12px; color:var(--ink-dim);">Brasília, DF · © 2026</span>
+    <span class="mono" style="font-size:12px; color:var(--ink-dim);" data-pt="Brasília, DF · © 2026" data-en="Brasília, Brazil · © 2026">Brasília, DF · © 2026</span>
   </div>
 
 </div>
@@ -461,6 +494,45 @@
       theme = theme === 'dark' ? 'light' : 'dark';
       localStorage.setItem(STORAGE_KEY, theme);
       applyTheme(theme);
+    });
+  }
+
+  // Language
+  var LANG_KEY = 'criaugu-lang';
+  var META_DESC = {
+    pt: 'CriAugu é um estúdio de tecnologia e design que conecta estratégia de produto, UX engineering e desenvolvimento para transformar ideias complexas em sistemas que funcionam de verdade.',
+    en: 'CriAugu is a technology and design studio connecting product strategy, UX engineering and development to turn complex ideas into systems that actually work.'
+  };
+  var TITLE = {
+    pt: 'CriAugu — Tecnologia & Design',
+    en: 'CriAugu — Technology & Design'
+  };
+
+  function getPreferredLang() {
+    var saved = localStorage.getItem(LANG_KEY);
+    if (saved === 'pt' || saved === 'en') return saved;
+    return 'pt';
+  }
+  function applyLang(lang) {
+    root.setAttribute('lang', lang === 'pt' ? 'pt-BR' : 'en');
+    document.querySelectorAll('[data-pt]').forEach(function (el) {
+      var text = lang === 'pt' ? el.getAttribute('data-pt') : el.getAttribute('data-en');
+      if (text !== null) el.innerHTML = text;
+    });
+    var label = document.getElementById('lang-label');
+    if (label) label.textContent = lang === 'pt' ? 'EN' : 'PT';
+    document.title = TITLE[lang];
+    var metaDesc = document.getElementById('meta-description');
+    if (metaDesc) metaDesc.setAttribute('content', META_DESC[lang]);
+  }
+  var lang = getPreferredLang();
+  applyLang(lang);
+  var langToggle = document.getElementById('lang-toggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', function () {
+      lang = lang === 'pt' ? 'en' : 'pt';
+      localStorage.setItem(LANG_KEY, lang);
+      applyLang(lang);
     });
   }
 
