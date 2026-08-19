@@ -191,7 +191,7 @@
     max-width: 700px;
     height: auto;
     transform: translateY(-50%);
-    opacity: 0.5;
+    opacity: 0.75;
     animation: symbol-float 8s ease-in-out infinite, symbol-in 1.1s cubic-bezier(0.16,1,0.3,1) both;
     animation-delay: 0s, 0.15s;
     pointer-events: none;
@@ -202,7 +202,7 @@
   }
   @keyframes symbol-in {
     from { opacity: 0; transform: translateY(-50%) scale(0.94); }
-    to { opacity: 0.5; transform: translateY(-50%) scale(1); }
+    to { opacity: 0.75; transform: translateY(-50%) scale(1); }
   }
 
   @media (max-width: 960px) {
@@ -214,11 +214,11 @@
     .about-row { flex-direction: column; align-items: flex-start; gap: 32px; }
     .about-divider { display: none; }
     .contact-row { flex-direction: column; align-items: flex-start; }
-    .hero-symbol { width: 78%; right: -6%; opacity: 0.35; }
+    .hero-symbol { width: 78%; right: -6%; opacity: 0.55; }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .hero-symbol { animation: none; opacity: 0.5; }
+    .hero-symbol { animation: none; opacity: 0.75; }
   }
 </style>
 </head>
@@ -305,6 +305,20 @@
     <p class="reveal" data-reveal style="font-size:15px; margin-bottom:48px; max-width:620px;">Frentes próprias em diferentes estágios — de exploração conceitual a ferramentas em uso ativo.</p>
 
     <div class="reveal-stagger products-grid" data-reveal>
+
+      <a href="https://github.com/ahaugusto/tusab" target="_blank" rel="noopener" class="card card-hover" style="padding:32px; display:flex; flex-direction:column; gap:18px; grid-column: 1 / -1; border-color: var(--accent);">
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+          <h3 style="font-size:22px; color:var(--ink);">Tusab</h3>
+          <span class="tag" style="border-color:var(--accent); color:var(--accent);">Ativo · v1.0.53</span>
+        </div>
+        <p style="font-size:14.5px;">Seu especialista pessoal — PKM (gestão de conhecimento pessoal) com IA local. Aponte para o que você quer aprender — canal do YouTube, PDF, documento — e o Tusab absorve tudo e responde suas perguntas citando a fonte exata. Roda no seu computador, funciona offline, custo zero com Ollama.</p>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <span class="tag">PKM</span>
+          <span class="tag">IA local</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Windows &amp; macOS</span>
+        </div>
+      </a>
 
       <div class="card card-hover" style="padding:32px; display:flex; flex-direction:column; gap:18px;">
         <div style="display:flex; align-items:center; justify-content:space-between;">
@@ -419,7 +433,7 @@
     var heroSymbol = document.getElementById('hero-symbol');
     if (navLogo) navLogo.src = isLight ? 'logo-wordmark-light.png' : 'logo-wordmark.png';
     if (footerLogo) footerLogo.src = isLight ? 'logo-tagline-light.png' : 'logo-tagline.png';
-    if (heroSymbol) heroSymbol.src = isLight ? 'logo-symbol-light.png' : 'logo-symbol-dark.png';
+    if (heroSymbol) heroSymbol.src = 'logo-symbol-dark.png';
   }
 
   var theme = getPreferredTheme();
